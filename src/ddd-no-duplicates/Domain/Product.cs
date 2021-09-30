@@ -20,7 +20,7 @@ namespace DddNoDuplicates.Domain
         {
             if (!isNameUnique)
             {
-                return Result.Fail("Name must be unique.");
+                return Result.Fail(ExceptionMessages.ProductNameMustBeUnique);
             }
 
             Name = name;
@@ -31,7 +31,7 @@ namespace DddNoDuplicates.Domain
         {
             if (!await uniqueNameRequirement.IsSatisfied)
             {
-                return Result.Fail("Name must be unique.");
+                return Result.Fail(ExceptionMessages.ProductNameMustBeUnique);
             }
             
             Name = name;
