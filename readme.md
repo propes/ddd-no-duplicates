@@ -1,6 +1,6 @@
 # DDD No Duplicates Problem
 
-This repository offers some ways to tackle the common problem in DDD where a business rule (invariant) of the domain model requires data from outside the model. This often results in either domain logic leaking into the service layer or external dependencies being injected into the domain class. A classic example of this is when trying to enforce uniqueness when creating/updating a user name, user email, product name, etc.
+This code offers some ways to tackle a common problem in DDD where a business rule (invariant) of the domain model requires data from outside the model. This often results in either domain logic leaking into the service layer or external dependencies being injected into the domain class. A classic example of this is when trying to enforce uniqueness when creating/updating a user name, user email, product name, etc.
 
 For more details on the problem [this](https://enterprisecraftsmanship.com/posts/domain-model-purity-completeness/) is a good article.
 
